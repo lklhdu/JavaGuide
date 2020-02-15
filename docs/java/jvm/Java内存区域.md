@@ -232,8 +232,7 @@ JDK 1.8 的时候，方法区（HotSpot 的永久代）被彻底移除了（JDK1
 ![](http://my-blog-to-use.oss-cn-beijing.aliyuncs.com/18-9-14/26038433.jpg)
 ——图片来源：https://blog.csdn.net/wangbiao007/article/details/78545189
 
-<img src="C:\Users\乐柯磊\AppData\Roaming\Typora\typora-user-images\image-20200215213500018.png" alt="image-20200215213500018" style="zoom:50%;" />
-
+![Java堆](http://java-guide.oss-cn-hangzhou.aliyuncs.com/typora/20200215214443-902549.png)
 
 ### 2.7 直接内存
 
