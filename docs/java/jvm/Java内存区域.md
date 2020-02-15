@@ -474,9 +474,26 @@ i4=i5+i6   true
 
 语句 i4 == i5 + i6，因为+这个操作符不适用于 Integer 对象，首先 i5 和 i6 进行自动拆箱操作，进行数值相加，即 i4 == 40。然后 Integer 对象无法与数值进行直接比较，所以 i4 自动拆箱转为 int 值 40，最终这条语句转为 40 == 40 进行数值比较。
 
+## 五 实战-OutOfMemoryError异常
+
+**虚拟机参数**
+
+```
+-Xms //堆最小值
+-Xmx //堆最大值
+-XX:+HeapDumpOnOutOfMemoryError //可以让虚拟机在出现内存溢出异常时Dump出当前的内存堆转储快照
+```
+
+
+
+### 5.1 java堆溢出
+
+![堆溢出](C:\Users\乐柯磊\AppData\Roaming\Typora\typora-user-images\image-20200215161928973.png)
+
+
+
 ## 参考
 
-- javaGuide-java内存区域[https://github.com/Snailclimb/JavaGuide/blob/master/docs/java/jvm/Java%E5%86%85%E5%AD%98%E5%8C%BA%E5%9F%9F.md](https://github.com/Snailclimb/JavaGuide/blob/master/docs/java/jvm/Java内存区域.md)
 - 《深入理解 Java 虚拟机：JVM 高级特性与最佳实践（第二版》
 - 《实战 java 虚拟机》
 - <https://docs.oracle.com/javase/specs/index.html>
