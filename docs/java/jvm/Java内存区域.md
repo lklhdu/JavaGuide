@@ -232,8 +232,6 @@ JDK 1.8 的时候，方法区（HotSpot 的永久代）被彻底移除了（JDK1
 ![](http://my-blog-to-use.oss-cn-beijing.aliyuncs.com/18-9-14/26038433.jpg)
 ——图片来源：https://blog.csdn.net/wangbiao007/article/details/78545189
 
-![Java堆](http://java-guide.oss-cn-hangzhou.aliyuncs.com/typora/20200215214443-902549.png)
-
 ### 2.7 直接内存
 
 **直接内存并不是虚拟机运行时数据区的一部分，也不是虚拟机规范中定义的内存区域，但是这部分内存也被频繁地使用。而且也可能导致 OutOfMemoryError 错误出现。**
