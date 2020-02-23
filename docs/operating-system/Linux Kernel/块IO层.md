@@ -1,3 +1,7 @@
+> 转自博客园`wang_yb`的文章
+>
+> 原文地址：https://www.cnblogs.com/wang_yb/p/3299092.html
+
 ## 块I/O层
 
 **主要内容：**
