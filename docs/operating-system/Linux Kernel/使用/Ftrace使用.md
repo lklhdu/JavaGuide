@@ -45,6 +45,17 @@ echo > trace
 
 在 Linux 内核中，进程的状态在内核头文件 include/linux/sched.h 中定义，包括**可运行状态 TASK_RUNNING**（对应跟踪信息中的符号`R`）、可中断阻塞状态 **TASK_INTERRUPTIBLE**（对应跟踪信息中的符号` S`）等。同时该头文件也定义了用户态进程所使用的优先级的范围，最小值为 MAX_USER_RT_PRIO（值为 100 ），最大值为 MAX_PRIO - 1（对应值为 139 ），缺省为 DEFAULT_PRIO（值为 120 ）；在本例中，进程优先级都是缺省值 120 。
 
+## 跟踪内核函数调用
+
+```shell
+echo function_graph > current_tracer
+echo smp_apic_timer_interrupt > set_graph_function
+cat trace
+```
+
+
+
 ### 参考资料
 
-1.使用 ftrace 调试 Linux 内核，第 2 部分 https://www.ibm.com/developerworks/cn/linux/l-cn-ftrace2/index.html
+1. 使用 ftrace 调试 Linux 内核，第 2 部分 https://www.ibm.com/developerworks/cn/linux/l-cn-ftrace2/index.html
+1. Linux使用 ftrace 来跟踪内核函数调用 https://blog.csdn.net/SweeNeil/article/details/90038286
